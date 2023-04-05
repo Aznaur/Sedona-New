@@ -347,3 +347,201 @@ body {
   margin: 0;
   word-break: break-word;
 }
+
+.booking {
+  background-color: #ffffff;
+  padding: 96px 0;
+}
+
+.booking-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 20px;
+  text-align: center;
+  width: 592px;
+}
+
+.booking-lead {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.booking-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.booking-button {
+  background-color: var(--basic-button-color);
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: "PT Sans", "Aria", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 34px;
+  padding: 8px 50px;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 70px 30px 70px;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 142px;
+}
+
+.social-link {
+  color: #83B3D3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+}
+
+.social-link:hover {
+  color: #68A2CA;
+}
+
+.social-link:active {
+  opacity: 0.3;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.contacts-tel:hover {
+  color: #756157;
+}
+
+.contacts-tel:active {
+  opacity: 0.3;
+}
+
+.logo-footer {
+  display: flex;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-footer:hover {
+  color: #756157;
+}
+
+.logo-footer:active {
+  opacity: 0.3;
+}
+
+.subscription {
+  background-image: url('../images/image-subscription.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 96px 0 104px 0;
+}
+
+.subscription-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 55px;
+  text-align: center;
+  margin: 0 auto;
+  width: 684px;
+}
+
+.subscription-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 20px;
+  text-align: center;
+  width: 592px;
+}
+
+.subscription-lead {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.subscription-subtitle {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.subscription-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.subscription-input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 20px;
+}
+
+.subscription-button {
+  background-color: var(--secondary-button-color);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: "PT Sans", "Aria", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+  text-transform: uppercase;
+}
