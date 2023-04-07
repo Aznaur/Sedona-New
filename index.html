@@ -48,10 +48,11 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Юронирование номеров в Седоне</h1>
-      <div class="hero">
+      <h1 class="visually-hidden">Бронирование номеров в Седоне</h1>
+      <section class="hero">
+        <h2 class="visually-hidden">Седона</h2>
         <img class="hero-img" src="images/hero-text.svg" alt="Добро пожаловать в Седону" width="458" height="352">
-      </div>
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
         <div class="advantages-text">
@@ -171,7 +172,7 @@
         </li>
       </ul>
       <address class="contacts">
-        <a href="tel:+7 (812) 812-12-12" class="contacts-tel">+7 (812) 812-12-12</a>
+        <a href="tel:+7-(812)-812-12-12" class="contacts-tel">+7 (812) 812-12-12</a>
       </address>
       <a href="https://htmlacademy.ru" class="logo-footer">
         <span class="visually-hidden">Ссылка на сайт htmlAcademy</span>
@@ -191,5 +192,76 @@
         </svg>
       </a>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-booking">
+        <button class="modal-close-button" aria-label="Закрыть">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="modal-group">
+              <label class="modal-label" for="field-check-in">Дата Заезда:</label>
+              <div class="modal-group-input">
+                <input class="modal-input-date" type="text" name="check-in" id="field-check-in" value="27 апреля 2020" placeholder="Укажите дату">
+                <p class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</p>
+              </div>
+            </fieldset>
+            <fieldset class="modal-group">
+              <label class="modal-label" for="field-check-out">Дата Выезда:</label>
+              <div class="modal-group-input">
+                <input class="modal-input-date" type="text" name="check-out" id="field-check-out" value="1 сентября 2021" placeholder="Укажите дату">
+                <p class="modal-text modal-text-helper">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </fieldset>
+            <fieldset class="modal-group is-col">
+              <label class="modal-label" for="field-quantity-adults">Взрослые:</label>
+              <div class="modal-wrapper">
+                <button class="modal-control" type="button" aria-label="Уменьшить">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+                <input class="modal-input-number" type="number" name="quantity-adults" id="field-quantity-adults" value="2">
+                <button class="modal-control" type="button" aria-label="Увеличить">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="modal-group is-col">
+              <span class="modal-tooltip">
+                <label class="modal-label" for="field-quantity-children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <div class="modal-wrapper">
+                <button class="modal-control" type="button" aria-label="Уменьшить">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+                <input class="modal-input-number" type="number" name="quantity-children" id="field-quantity-children" value="2">
+                <button class="modal-control" type="button" aria-label="Увеличить">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
+            </fieldset>
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
